@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最喜欢青慧宝贝了</title>
+<audio src="img/a.mp3"  autoplay="autoplay" loop="loop"></audio> 
+		<style >
+			
+			    body{ background-attachment: fixed; background-color: pink;}
+			
+		</style>
+
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="box">
+	<ul class="minbox">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ol class="maxbox">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ol>
+</div>
+
+	<div align="center" style="margin-top: 70%;">
+
+        <p id="textHide" style="display: none;"><font size="30" color="hotpink">
+		喜欢你<br>
+		只因为你就是你<br>
+		我遇见了你<br>
+		也喜欢上了你<br>
+		我觉得<br>
+		这是我最大的幸运<br>
+		真的很爱你呀<br>
+		o(￣ε￣*)
+		
+		
+		</p>
+	</font>
+
+        <p id="textShow"></p>
+</body>
+    <script>
+        var page2Txt = document.getElementById('textHide'),
+        page2TxtShow = document.getElementById('textShow'),
+        i = 0,
+        timer = setInterval(function(){
+            page2TxtShow.innerHTML = page2Txt.innerHTML.substring(0, i);
+            i++;
+            if(page2TxtShow.innerHTML == page2Txt.innerHTML){
+                clearInterval(timer);
+            };
+        },100);
+ 
+    </script>
+</html>
